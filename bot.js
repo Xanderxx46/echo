@@ -52,6 +52,10 @@ client.on(Events.ChannelCreate, async (channel) => {
                 .setColor(0x8000ff);
             
             try {
+                // Wait 1-2 seconds before sending the message
+                const delay = Math.floor(Math.random() * 1000) + 1000; // Random between 1000-2000ms
+                await new Promise(resolve => setTimeout(resolve, delay));
+                
                 await channel.send({ embeds: [embed] });
                 console.log(`Sent welcome message to new channel: ${channel.name}`);
             } catch (error) {
