@@ -1,0 +1,20 @@
+{
+  "name": "discord-channel-notifier",
+  "version": "1.0.0",
+  "description": "Discord bot that sends embeds when new channels are created under a specific category",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1"
+  }
+}
+
